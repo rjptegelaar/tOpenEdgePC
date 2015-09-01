@@ -127,12 +127,12 @@
 		<dependency>
 			<groupId>nl.progaia.progress</groupId>
 			<artifactId>appserverclient</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>nl.progaia.progress</groupId>
 			<artifactId>talend-appserver-utils</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
 	<packaging>pom</packaging>
