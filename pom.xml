@@ -137,9 +137,9 @@
 	</dependencies>
 	<packaging>pom</packaging>
 	<scm>
-		<connection>scm:git:https://github.com/rjptegelaar/liquid-talend-esb-interceptor.git</connection>
-		<developerConnection>scm:git:git@github.com:rjptegelaar/liquid-talend-esb-interceptor.git</developerConnection>
-		<url>https://github.com/rjptegelaar/liquid-talend-esb-interceptor.git</url>
+		<connection>scm:git:https://github.com/rjptegelaar/tOpenEdgePC.git</connection>
+		<developerConnection>scm:git:git@github.com:rjptegelaar/tOpenEdgePC.git</developerConnection>
+		<url>https://github.com/rjptegelaar/tOpenEdgePC.git</url>
 		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
