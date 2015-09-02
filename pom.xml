@@ -5,7 +5,7 @@
 	<artifactId>tOpenEdgePC</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tOpenEdgePC</name>
-	<description>OpenEdge procedure call component for Talend DataIntegration. Can be used to integratie openedge businesslogic using an appserver.</description>
+	<description>OpenEdge procedure call component for Talend DataIntegration. Can be used to integrate openedge businesslogic using an appserver.</description>
 	<build>
 		<finalName>tOpenEdgePC</finalName>
 		<plugins>
