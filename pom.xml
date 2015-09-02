@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.pte.talend.progress</groupId>
 	<artifactId>tOpenEdgePC</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>tOpenEdgePC</name>
 	<description>OpenEdge procedure call component for Talend DataIntegration. Can be used to integrate openedge businesslogic using an appserver.</description>
 	<build>
