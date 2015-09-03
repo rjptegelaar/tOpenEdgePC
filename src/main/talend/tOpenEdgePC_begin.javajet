@@ -43,12 +43,21 @@
     String procedureName = ElementParameterParser.getValue(node, "__procedureName__");
     List<Map<String, String>> procedureArguments = (List<Map<String,String>>) ElementParameterParser.getObjectValue(node, "__procedureArguments__");
     String appServerInfo = ElementParameterParser.getValue(node, "__appServerInfo__");
+    long sleep = java.lang.Integer.parseInt(ElementParameterParser.getValue(node, "__sleep__"));
     
-    
+
 %>
 
-nl.progaia.progress.client.AppserverClient ac_<%=cid %> = nl.progaia.progress.client.AppserverClient.getInstance();
-ac_<%=cid %>.init(<%=appserverUrl%>, <%=username%>, <%=password%>, <%=service%>, <%=appServerInfo%>, <%=session%>);
+nl.progaia.progress.client.AppserverClient ac_<%=cid %> = new nl.progaia.progress.client.AppserverClient(<%=appserverUrl%>, <%=username%>, <%=password%>, <%=service%>, <%=appServerInfo%>, <%=session%>);
+
+<%
+  if(sleep>0){
+%>
+ac_<%=cid %>.setDelay(<%=sleep %>);
+<%
+}  
+%>
+
 
 
 

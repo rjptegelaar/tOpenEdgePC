@@ -37,4 +37,4 @@
     String cid = node.getUniqueName();	
 %>
 
-ac_<%=cid %>.destroy();
+globalMap.put("<%=cid %>_NB_LINE",tos_count_<%=cid %>);

@@ -144,8 +144,9 @@ if (metadatas != null && metadatas.size() > 0) {
 				}
 			}
 		}
-%>
-		java.util.Map<Integer, nl.progaia.progress.valueholder.ValueHolder<?>> procedureResult_<%=cid %> = ac_<%=cid %>.callProcedure(proc_<%=cid %>.getValues(tr_<%=cid %>),proc_<%=cid %>.getProcedure());
+%>		
+ 	    java.util.Map<Integer, nl.progaia.progress.valueholder.ValueHolder<?>> procedureResult_<%=cid %> = ac_<%=cid %>.callProcedure(proc_<%=cid %>.getValues(tr_<%=cid %>),proc_<%=cid %>.getProcedure());		
+				
 		proc_<%=cid %>.appendProcedureResult(procedureResult_<%=cid %>,tr_<%=cid %>);
 				
 <%		
@@ -338,6 +339,5 @@ if (metadatas != null && metadatas.size() > 0) {
 <%				
 	}
 %>
-
 
 

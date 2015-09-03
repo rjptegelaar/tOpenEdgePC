@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<COMPONENT> 
+<?xml version="1.0" encoding="utf-8"?><COMPONENT> 
 <!-- 
 Copyright 2015 Paul Tegelaar
 
@@ -54,12 +53,7 @@ tOpenEdgePC is not supported, endorsed by or affiliated with Progress Software i
    	<PARAMETER FIELD="TEXT" NAME="procedureName" NUM_ROW="67" REQUIRED="true">
 		 <DEFAULT>"test.p"</DEFAULT>
 	</PARAMETER>
-    <PARAMETER NAME="procedureArguments"
-      FIELD="TABLE"
-      REQUIRED="true"
-      NUM_ROW="70"
-      NB_LINES="3"
-    >
+    <PARAMETER NAME="procedureArguments" FIELD="TABLE" REQUIRED="true" NUM_ROW="70" NB_LINES="3">
       <ITEMS>
         <ITEM NAME="COLUMN" FIELD="COLUMN_LIST"/>
 
@@ -70,7 +64,7 @@ tOpenEdgePC is not supported, endorsed by or affiliated with Progress Software i
             <ITEM VALUE="INPUT_OUTPUT" NAME="IN-OUT"/>
           </ITEMS>
         </ITEM>
-         <ITEM NAME="DBTYPE" FIELD="CLOSED_LIST" >
+         <ITEM NAME="DBTYPE" FIELD="CLOSED_LIST">
 	         <ITEMS DEFAULT="STRING">
 	            <ITEM VALUE="BOOLEAN" NAME="LOGICAL"/>
 	            <ITEM VALUE="DATE" NAME="DATE"/>
@@ -95,17 +89,21 @@ tOpenEdgePC is not supported, endorsed by or affiliated with Progress Software i
     <PARAMETER FIELD="TEXT" NAME="appServerInfo" NUM_ROW="20" REQUIRED="false">
     <DEFAULT>""</DEFAULT>
     </PARAMETER>
-        	<PARAMETER NAME="openEdgeJars" FIELD="TABLE" NUM_ROW="75" 
-                        NB_LINES="3" REQUIRED="true"> 
+        	<PARAMETER NAME="openEdgeJars" FIELD="TABLE" NUM_ROW="75" NB_LINES="3" REQUIRED="true"> 
 	    <ITEMS> 
-	            <ITEM NAME="jarName" FIELD="MODULE_LIST" /> 
+	            <ITEM NAME="jarName" FIELD="MODULE_LIST"/> 
 	    </ITEMS> 
+    </PARAMETER> 
+    <PARAMETER FIELD="LABEL" NAME="sleepLabel" NUM_ROW="25">
+    	<DEFAULT>Waiting period per call, gives OpenEdge component time to close connections.</DEFAULT>
+    </PARAMETER> 
+    <PARAMETER FIELD="INTEGER" NAME="sleep" NUM_ROW="30" REQUIRED="true">
+    	<DEFAULT>5</DEFAULT>
     </PARAMETER> 
   </ADVANCED_PARAMETERS>  
     <CODEGENERATION>
   	<IMPORTS>
-     	     	                  
-    </IMPORTS>
+</IMPORTS>
  </CODEGENERATION>
   <RETURNS> 
     <RETURN AVAILABILITY="AFTER" NAME="NB_LINE" TYPE="id_Integer"/> 
