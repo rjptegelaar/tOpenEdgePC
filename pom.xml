@@ -126,12 +126,12 @@
 		<dependency>
 			<groupId>nl.progaia.progress</groupId>
 			<artifactId>appserverclient</artifactId>
-			<version>0.0.3</version>
+			<version>0.0.5</version>
 		</dependency>
 		<dependency>
 			<groupId>nl.progaia.progress</groupId>
 			<artifactId>talend-appserver-utils</artifactId>
-			<version>0.0.2</version>
+			<version>0.0.3</version>
 		</dependency>
 	</dependencies>
 	<packaging>pom</packaging>
@@ -143,9 +143,8 @@
 	</scm>
 	<distributionManagement>
 		<repository>
-			<id>pte-releases</id>
-			<name>internal releases</name>
-			<url>${releases-url}</url>
+			<id>bintray</id>
+			<url>https://api.bintray.com/maven/paultegelaar/maven/tOpenEdgePC</url>
 		</repository>
 		<snapshotRepository>
 			<id>pte-snapshots</id>
