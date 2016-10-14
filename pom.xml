@@ -107,6 +107,8 @@
 							<formats>
 								<format>zip</format>
 							</formats>
+							<finalName>tOpenEdgePC</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
 						</configuration>
 					</execution>
 				</executions>
